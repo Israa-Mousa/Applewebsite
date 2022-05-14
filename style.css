@@ -1,0 +1,744 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background: white;
+  font-size: 14px;
+  font-weight: 300px;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  z-index: 1400;
+  transition: all 0.2s;
+  /* transform: translate(0,0px); */
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-list-small {
+  position: fixed;
+  top: 0;
+  text-align: left;
+  background: #000;
+  width: 100%;
+  z-index: 1400;
+  backdrop-filter: saturate(180%) blur(20px);
+  height: 100%;
+  /* transform: translate(0,0px); */
+  /* transition: all 0.2s; */
+}
+
+.nav-item-small-block {
+  display: block !important;
+}
+
+.nav-list-small .bag {
+  opacity: 0;
+  /* transition: all 3s; */
+}
+
+.nav-list-item-small {
+  padding-top: 18px;
+  width: 80%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+  margin-left: 4% !important;
+}
+
+.nav-list ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3px;
+}
+
+.nav-list ul li {
+  /* margin-left: 10px; */
+  margin: 0 auto;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: #f5f5f7;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.menu-icon {
+  display: none;
+  opacity: 0.7;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  opacity: 0.7;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-1px, 1px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-10px, -10px);
+}
+
+.nav-list ul li a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-containe {
+  margin-top: 30px;
+}
+
+.search-container input[type="text"] {
+  width: 80%;
+  box-sizing: border-box;
+  border: none;
+  background-image: url(images/search.svg);
+  background-repeat: no-repeat;
+  background-position: 2px;
+  transition: background 0.2s;
+  border-radius: 17px;
+  padding: 20px;
+  height: 47px;
+  margin-bottom: 8px;
+  margin-left: 2%;
+}
+
+form {
+  border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+}
+
+.search-container input[type="text"] {
+  background-color: rgb(39 37 37);
+}
+
+.bag {
+  background-image: url("images/bag.svg");
+  margin-left: -30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 43px;
+  width: 20px;
+  transition: all 0.5s;
+  height: 40px;
+}
+
+.search {
+  background-image: url("images/search.svg");
+  opacity: 0.5;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 47px;
+  width: 20px;
+  height: 40px;
+}
+
+.bag:hover,
+.search:hover,
+.menu-icon:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.main {
+  width: 100%;
+  margin: 43px auto;
+  /* border:1px solid red; */
+  text-align: center;
+}
+
+.main-par {
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 0;
+}
+
+.main-par-class {
+  width: 100%;
+  background: #fbfbfd;
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+.main a {
+  color: #06c;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+}
+
+.iphon-1 {
+  background: 1px solid black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.iphon-1-back {
+  background: url("images/iphone11.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: initial;
+  /* height: 100%; */
+  height: 700px;
+  width: 100%;
+}
+
+.iphon-1-heading-1 {
+  font-size: 56px !important;
+  font-weight: 600;
+  margin-top: 15px;
+  letter-spacing: -0.005em;
+}
+
+.iphon-1-heading-2 {
+  padding-top: 12px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.004em;
+}
+
+.iphone-pro-img {
+  width: 513px;
+  height: 372px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.iphone-pro-img-image {
+  height: auto;
+  width: 100%;
+}
+
+.bottom-links {
+  padding-top: 12px;
+  margin-bottom: 31px;
+  text-decoration: none;
+}
+
+.bottom-links a {
+  margin-left: 31px;
+  font-size: 21px;
+}
+
+.bottom-links .icon {
+  margin-left: 6px;
+}
+
+.iphone-13 {
+  width: 100%;
+  height: 600px;
+}
+
+.iphone-13-back {
+  background-image: url("images/iphone22.png");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.iphone-13 h1 {
+  color: #fff;
+  font-size: 54px;
+  font-weight: 400;
+  letter-spacing: 0.004em;
+  padding-top: 30px;
+}
+
+.iphone-13 h4 {
+  padding: 12px 12px;
+  color: #fec2eb;
+  font-size: 27px;
+  position: relative;
+}
+
+section .watch {
+  height: 800px;
+}
+
+.watch {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  width: auto;
+}
+.watch h3 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+}
+.watch p {
+  margin-top: 10px;
+}
+.watch-img2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("images/hearo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-position: center;
+}
+
+.watch-img1 {
+  background-image: url("images/watch.png");
+  height: 138px;
+  background-size: auto 114px;
+  background-repeat: no-repeat;
+  padding: 12px;
+  z-index: 100000000000000000;
+  background-position: center;
+}
+
+.later {
+  color: #a4b0be !important;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 100000000000000000;
+}
+
+.collection {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.collection-right {
+  width: 48.5%;
+}
+
+.collection-left {
+  width: 48.5%;
+}
+
+.collection-right {
+  background-image: url("images/ipad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin-right: 10px;
+}
+.collection-left {
+  background-image: url("images/fitness.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin-left: 10px;
+}
+.collection-left-img1 {
+  margin-top: 60px;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(images/fitnessheader.png) no-repeat;
+  background-position: center;
+  padding-left: 180px;
+  height: 33px;
+  background-size: 174px 33px;
+
+  /* margin-top: 0px;
+display: block;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: url("images/fitnessheader.png") no-repeat;
+background-position: center;
+padding-left: 180px;
+height: 150px; */
+}
+.fitness-h5 {
+  font-size: 31px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.2381;
+  font-weight: 400;
+  letter-spacing: 0.016em;
+  font-weight: 600;
+  padding-top: 18px;
+  max-width: 373px;
+  margin: 3px auto;
+}
+
+.mini {
+  margin-top: 60px;
+  display: block;
+  box-sizing: border-box;
+  background: url(images/header.png) no-repeat;
+  background-position: center;
+  padding-left: 180px;
+  height: 33px;
+  background-size: 153px 31px;
+  /* margin-top: 0px;
+display: block;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: url("images/header.png") no-repeat;
+background-position: center;
+padding-left: 180px;
+height: 160px; */
+}
+.mini-h5 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.2381;
+
+  letter-spacing: 0.016em;
+  padding-top: 14px;
+}
+.airtag {
+  display: block;
+  box-sizing: border-box;
+  background: url(images/Airbag.png) no-repeat;
+  background-position: center;
+  padding-left: 180px;
+  width: 111px;
+  height: 39px;
+  background-size: 111px 39px;
+  margin: 57px auto 0px auto;
+}
+.hand {
+  background-image: url("images/hand.png");
+  height: auto;
+}
+.hand h5 {
+   font-size: 29px; 
+  font-weight: 600; 
+  padding-top: 10px;
+}
+.mac {
+  background-image: url("images/macfull.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+}
+.mac h4 {
+  margin-top: 56px;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.tv {
+  background-image: url("images/tv.png") !important;
+}
+.header-tv {
+  background-image: url(images/movieheader2.png) !important;
+  background-repeat: no-repeat;
+  display: block;
+  box-sizing: border-box;
+  background-position: center;
+  padding-left: 180px;
+  margin-top: 59px;
+  margin: 59px auto;
+  width: 84px;
+  height: 33px;
+  background-size: 84px 33px;
+}
+.card-header {
+  display: block;
+  box-sizing: border-box;
+  background: url(images/cardheader.png) no-repeat;
+  background-position: center;
+  margin: 59px auto 0px auto;
+  width: 125px;
+  height: 35px;
+  background-size: 125px 35px;
+}
+.card {
+  background-image: url(images/card.png) !important;
+}
+.card h5 {
+  margin: 0 auto;
+  font-weight: 600;
+  max-width: 290px;
+  font-size: 21px;
+  letter-spacing: 0.016em;
+}
+
+@media screen and (max-width: 1068px) {
+  .iphon-1-back {
+      background: url("images/meduimiphone.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .iphon-1-heading-1 {
+      font-size: 32px !important;
+      font-weight: 600;
+  }
+  .iphon-1-heading-2 {
+      font-size: 19px;
+      font-weight: 400;
+  }
+  .bottom-links {
+      margin-bottom: 17px;
+  }
+  .bottom-links a {
+      margin-left: 17px;
+      font-size: 21px;
+  }
+  .iphone-13-back {
+      background: url("images/medium2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .watch-img1 {
+      background-image: url("images/meduim4.png");
+  }
+  .watch-img2 {
+      background: url("images/meduim3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .iphone-13 h1 {
+      padding-top: 236px;
+  }
+  .mini {
+      margin-top: 0px;
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url("images/meduim5.png") no-repeat;
+      background-position: center;
+      padding-left: 180px;
+      height: 160px;
+  }
+  .collection-right {
+      background-image: url("images/ipadmini-meduim.png");
+  }
+
+  .collection-left {
+      background-image: url("images/fitness-meduim.png");
+  }
+
+  .collection-left-img1 {
+      margin-top: 0px;
+      background-image: url("images/fitnessheader-meduim.png");
+  }
+  .mac {
+      background-image: url("images/imac-meduim.png") !important;
+  }
+  .hand {
+      background-image: url("images/hand-meduim.png") !important;
+  }
+  .card-header {
+      background-image: url("images/card-header-meduim.png") !important;
+  }
+  .card {
+      background-image: url("images/card-med.png") !important;
+  }
+  .tv {
+      background-image: url("images/tv-meduim.png") !important;
+  }
+  .airtag {
+      margin-top: 31px;
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url("images/Airbag-meduim.png") no-repeat;
+      background-position: center;
+      padding-left: 180px;
+      height: 102px;
+  }
+  .hand h5 {
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+  .header-tv {
+      background-image: url("images/movieheader-meduim.png") !important;
+  }
+}
+@media screen and (max-width: 779px) {
+  .nav-list ul li {
+      margin: 0 0;
+  }
+  .menu-icon {
+      display: block;
+  }
+  .nav-list-item {
+      display: none;
+  }
+  .iphon-1-back {
+      background: url("images/smalliphone.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    
+  }
+  .iphone-13-back {
+      background: url("images/smalliphone13.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .iphone-13 h1 {
+      padding-top: 249px;
+      font-size: 46px;
+  }
+  .iphone-13 h4 {
+      font-size: 19px;
+  }
+  .bottom-links a {
+      font-size: 18px;
+  }
+  .watch-img1 {
+      background-image: url("images/small4.png");
+  }
+  .watch-img2 {
+      background: url("images/small3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .mini {
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url("images/small5.png") no-repeat;
+      background-position: center;
+      padding-left: 180px;
+  }
+  .collection-right {
+      background-image: url("images/ipadmini-small.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  .collection-left {
+      background-image: url("images/fittness-small.png");
+  }
+
+  .collection-left-img1 {
+      background-image: url("images/fitnessheader-small.png");
+  }
+  .mac {
+      background-image: url("images/imac-small.png") !important;
+  }
+  .hand {
+      background-image: url("images/hand-small.png") !important;
+  }
+  .card-header {
+      background-image: url("images/card-header-small.png") !important;
+  }
+  .card {
+      background-image: url("images/crad-small.png") !important;
+  }
+  .tv {
+      background-image: url("images/tv-small.png") !important;
+  }
+  .airtag {
+      margin-top: 40px;
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url("images/Airbag-small.png") no-repeat;
+      background-position: center;
+      padding-left: 180px;
+      height: 102px;
+  }
+  .header-tv {
+      background-image: url("images/movieheader-small.png") !important;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .iphone-pro-img {
+      width: 100% !important;
+  }
+  .row {
+      display: block;
+  }
+  .collection-left {
+      width: 90% !important;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-size: 637px 555px !important; */
+      background-position: center;
+      height: 590px;
+  }
+  .collection-right {
+      width: 90% !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      /* background-size: 637px 555px !important; */
+      background-position: center;
+      height: 590px;
+  }
+  .mac h4 {
+      padding-top: 50px !important;
+  }
+  .mac h5 {
+      font-size: 21px !important ;
+  }
+  .mac .bottom-links {
+      margin-bottom: 0px;
+      padding-top: 17px;
+  }
+  .mac .bottom-links a {
+      font-size: 17px;
+  }
+  .mac .bottom-links .icon {
+      margin-left: 0px;
+  }
+  .hand h4 {
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 0px;
+  }
+  .airtag {
+      /* width: 89px;
+  height: 32px;
+  background-size: 89px 32px;
+  padding-top: 86px; */
+  }
+  .hand h5 {
+      font-size: 22px !important ;
+      font-weight: 600 !important;
+      padding-top: 0px !important;
+  }
+}
